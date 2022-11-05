@@ -29,13 +29,14 @@
   --color-button-active: #2196f3;
   --color-button-text: #212121;
   --color-button-text-active: #ffffff;
+  --btn-active: #188ce8;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.72;
+  /* line-height: 1.72; */
   letter-spacing: 0.03em;
   color: var(--text-color);
   background-color: var(--background-color);
@@ -99,14 +100,17 @@ body {
 /* HERO */
 
 .hero {
+  text-align: center;
+  color: var(--color-text-hero);
+  background-color: var(--background-color-hero-footer);
+}
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-text-hero);
-  background-color: var(--background-color-hero-footer);
 }
 .hero-btn {
   font-family: inherit;
@@ -120,6 +124,10 @@ body {
   background-color: var(--accent-color);
   border: none;
   cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--btn-active);
 }
 
 /* Features */
@@ -138,8 +146,10 @@ body {
   text-transform: uppercase;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--color-title);
+}
+.features-text {
+  line-height: 1.72;
 }
 
 /* Services */
@@ -186,6 +196,9 @@ body {
 .footer {
   background-color: var(--background-color-hero-footer);
 }
+.address {
+  font-style: normal;
+}
 .logo-footer {
   font-family: "Raleway";
   font-style: normal;
@@ -221,7 +234,6 @@ body {
 
 .botton-list {
   list-style-type: none;
-  /* cursor: pointer; */
 }
 .botton-item {
   font-family: inherit;
